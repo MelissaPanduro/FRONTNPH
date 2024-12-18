@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
     <header class="header">
       <div class="header-content">
         <div class="logo-section">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gSYQOYHzOn13EJdsb3SYdGGYUp2-0AVTWA&s" alt="Logo Empresa" class="logo">
+          <img src="https://ugc.production.linktr.ee/a2c37173-1672-422b-876c-de430a1b1bc7_LOGO-NPH-ES---Vertical-color-azul-sin-fondo.png" alt="Logo Empresa" class="logo">
           <span class="app-name">Sistema de NPH</span>
         </div>
         <div class="user-section">
