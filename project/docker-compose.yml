@@ -1,0 +1,6 @@
+version: '2'
+services:
+  app2:
+    image: melissapanduro/prsfront
+    ports:
+      - "4200:4200"
