@@ -25,7 +25,7 @@ import { Component } from '@angular/core';
           <span class="nav-subtitle">change-detection</span>
         </a>
         <a href="#" class="nav-item active">
-          <span class="nav-text">Galpon</span>
+          <span class="nav-text">Producto</span>
           <span class="nav-subtitle">control-flow</span>
         </a>
         <a href="#" class="nav-item">
