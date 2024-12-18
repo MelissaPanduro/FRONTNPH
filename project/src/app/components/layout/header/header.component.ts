@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
     <header class="header">
       <div class="header-content">
         <div class="logo-section">
-          <img src="assets/logo.png" alt="Logo" class="logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gSYQOYHzOn13EJdsb3SYdGGYUp2-0AVTWA&s" alt="Logo Empresa" class="logo">
           <span class="app-name">Sistema de NPH</span>
         </div>
         <div class="user-section">
           <span class="user-name">Usuario</span>
           <div class="user-avatar">
-            <img src="assets/user-avatar.png" alt="Usuario" />
+            <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Usuario" />
           </div>
         </div>
       </div>

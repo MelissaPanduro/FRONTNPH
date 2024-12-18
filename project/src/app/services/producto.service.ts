@@ -7,7 +7,7 @@ import { ProductoModel } from '../models/producto.model';
   providedIn: 'root'
 })
 export class ProductoService {
-  private apiUrl = 'http://localhost:8080/productos';
+  private apiUrl = 'https://fictional-funicular-7vrx775qp965hxw6g-8085.app.github.dev/api/productos';
 
   constructor(private http: HttpClient) { }
 

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
     <aside class="sidebar">
       <div class="user-info">
         <div class="user-avatar">
-          <img src="assets/user-avatar.png" alt="Usuario" />
+          <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Usuario" />
         </div>
         <div class="user-details">
           <p class="welcome">Bienvenido de nuevo,</p>
