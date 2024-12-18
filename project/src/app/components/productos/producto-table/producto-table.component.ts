@@ -11,7 +11,7 @@ import { ProductoModel } from '../../../models/producto.model';
       <table class="producto-table">
         <thead>
           <tr>
-            <th>ID</th>
+            <th></th>
             <th>Nombre</th>
             <th>Descripción</th>
             <th>Unidad Medida</th>
@@ -27,9 +27,9 @@ import { ProductoModel } from '../../../models/producto.model';
             <td>{{ producto.nombre }}</td>
             <td>{{ producto.descripcion }}</td>
             <td>{{ producto.unidadMedida }}</td>
-            <td>{{ producto.precio | currency }}</td>
+            <td>{{ producto.precioUnitario | currency }}</td>
             <td>{{ producto.categoria }}</td>
-            <td>{{ producto.fecha | date }}</td>
+            <td>{{ producto.fechaCreacion | date }}</td>
             <td class="actions">
               <button (click)="onEdit(producto)" class="btn-edit" *ngIf="!showInactive">
                 <i class="fas fa-edit"></i> Editar

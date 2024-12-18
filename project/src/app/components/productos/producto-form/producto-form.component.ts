@@ -28,33 +28,43 @@ import { ProductoModel } from '../../../models/producto.model';
                   rows="3"></textarea>
       </div>
       <div class="form-group">
-        <label for="unidadMedida">Unidad de Medida</label>
-        <input id="unidadMedida"
-               [(ngModel)]="productoForm.unidadMedida" 
-               name="unidadMedida"
-               placeholder="Ej: kg, unidades, etc." 
-               class="form-control">
-      </div>
+      <label for="unidadMedida">Unidad de Medida</label>
+      <select id="unidadMedida"
+          [(ngModel)]="productoForm.unidadMedida"
+          name="unidadMedida"
+          class="form-control">
+        <option value="" disabled [selected]="!productoForm.unidadMedida">Seleccione una unidad</option>
+        <option value="Plancha">Plancha</option>
+        <option value="Kg">Kg</option>
+        <option value="Saco">Saco</option>
+      </select>
+    </div>
+
       <div class="form-group">
-        <label for="precio">Precio</label>
-        <input id="precio"
+        <label for="precioUnitario">Precio</label>
+        <input id="precioUnitario"
                type="number" 
-               [(ngModel)]="productoForm.precio" 
-               name="precio"
+               [(ngModel)]="productoForm.precioUnitario" 
+               name="precioUnitario"
                placeholder="0.00" 
                class="form-control"
                min="0"
                step="0.01"
                required>
       </div>
-      <div class="form-group">
+        <div class="form-group">
         <label for="categoria">Categoría</label>
-        <input id="categoria"
-               [(ngModel)]="productoForm.categoria" 
-               name="categoria"
-               placeholder="Categoría del producto" 
-               class="form-control">
-      </div>
+        <select id="categoria"
+            [(ngModel)]="productoForm.categoria"
+            name="categoria"
+            class="form-control">
+      <option value="" disabled [selected]="!productoForm.categoria">Seleccione una categoría</option>
+      <option value="Huevos">Huevos</option>
+      <option value="Carne">Carne</option>
+      <option value="Abono">Abono</option>
+    </select>
+  </div>
+
       <div class="form-actions">
         <button type="submit" class="btn-primary">
           {{ producto?.id ? 'Actualizar' : 'Guardar' }}
@@ -123,15 +133,15 @@ import { ProductoModel } from '../../../models/producto.model';
 export class ProductoFormComponent {
   @Input() producto: ProductoModel | null = null;
   @Output() save = new EventEmitter<ProductoModel>();
-  
+
   productoForm: ProductoModel = {};
-  
+
   ngOnInit() {
     if (this.producto) {
       this.productoForm = { ...this.producto };
     }
   }
-  
+
   onSubmit() {
     this.save.emit(this.productoForm);
   }
